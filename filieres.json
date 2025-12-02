@@ -1,0 +1,94 @@
+{
+    "filières": [
+        {
+            "nom": "Mathématiques-Informatique",
+            "description": "Pour les esprits logiques qui aiment les chiffres, l'abstraction, la modélisation de problèmes et la résolution d'énigmes complexes à travers la programmation.",
+            "matières_fortes": ["Mathématiques", "Algorithmes", "Programmation", "Logique", "Statistiques"],
+            "qualités_requises": ["Rigueur", "esprit d'analyse et de synthèse", "goût pour l'abstraction", "autonomie"],
+            "débouchés": ["Data Scientist", "Cryptographe", "Enseignant/Chercheur", "Ingénieur R&D", "Actuaire"],
+            "durée": "3 ans (Licence) à 5 ans (Master/École d'Ingénieurs)",
+            "niveau": "Élevé"
+        },
+        {
+            "nom": "Économie-Gestion",
+            "description": "Pour les futurs décideurs qui sont intéressés par le fonctionnement des entreprises et des marchés, les enjeux de la finance et du management, avec une bonne aisance avec les données chiffrées.",
+            "matières_fortes": ["Macro/Micro-économie", "Statistiques", "Finance", "Comptabilité", "Droit", "Marketing"],
+            "qualités_requises": ["Sens de l'organisation", "curiosité pour l'actualité", "capacité à argumenter", "aisance avec les chiffres"],
+            "débouchés": ["Contrôleur de gestion", "Auditeur", "Consultant", "Analyste financier", "Chef de projet"],
+            "durée": "3 ans (Licence) à 5 ans (Master/École de Commerce).",
+            "niveau": "Moyen à Élevé"
+        },
+        {
+            "nom": "Médecine/Santé",
+            "description": "Pour ceux qui veulent soigner et aider autrui, qui ont une grande capacité de travail et d'apprentissage, une forte résistance psychologique, et un intérêt profond pour le corps humain.",
+            "matières_fortes": ["Biologie", "Anatomie", "Physiologie", "Chimie", "Pharmacologie", "Santé publique"],
+            "qualités_requises": ["Empathie", "endurance", "résistance au stress", "rigueur scientifique", "sens des responsabilités"],
+            "débouchés": ["Médecin généraliste ou spécialiste", "Pharmacien", "Chirurgien", "Infirmier", "Kinésithérapeute"],
+            "durée": "6 à 11 ans selon la spécialisation (Doctorat).",
+            "niveau": "Très Élevé"
+        },
+        {
+            "nom": "Droit",
+            "description": "Pour les passionnés de règles et de justice qui ont un excellent esprit de synthèse, une expression parfaite (écrite et orale), et qui aiment analyser des textes pour défendre ou conseiller.",
+            "matières_fortes": ["Droit Civil", "Droit Pénal", "Droit Constitutionnel", "Procédure", "Histoire du Droit"],
+            "qualités_requises": ["Capacité d'analyse et de synthèse", "excellente expression écrite et orale", "rigueur", "mémoire"],
+            "débouchés": ["Avocat", "Notaire", "Juge", "Juriste d'entreprise", "Huissier", "Consultant légal"],
+            "durée": "3 ans (Licence) à 5 ans (Master) et plus (écoles professionnelles).",
+            "niveau": "Élevé"
+        },
+        {
+            "nom": "Sciences Humaines",
+            "description": "Pour les curieux du monde et de l'homme qui aiment lire, débattre, analyser les sociétés, les cultures et les comportements humains avec un esprit critique aiguisé.",
+            "matières_fortes": ["Méthodologie de recherche", "Histoire", "Philosophie", "Sociologie", "Langues", "Psychologie"],
+            "qualités_requises": ["Esprit critique", "ouverture d'esprit", "curiosité", "excellentes capacités rédactionnelles", "aisance à l'oral"],
+            "débouchés": ["Journaliste", "Enseignant", "Psychologue", "Documentaliste", "Chargé d'études", "Consultant RH"],
+            "durée": "3 ans (Licence) à 5 ans (Master/Doctorat).",
+            "niveau": "Moyen"
+        },
+        {
+            "nom": "Ingénierie",
+            "description": "Pour les concepteurs et inventeurs qui aiment transformer des idées scientifiques en réalisations concrètes et fonctionnelles pour résoudre des défis techniques dans des domaines variés.",
+            "matières_fortes": ["Mathématiques appliquées", "Physique", "Mécanique", "Électronique", "Thermodynamique", "Matériaux"],
+            "qualités_requises": ["Créativité", "aptitude à la résolution de problèmes", "travail d'équipe", "rigueur", "pragmatisme"],
+            "débouchés": ["Ingénieur (Mécanique, Civil, Aéronautique, Électrique, etc.)", "Chef de projet", "Consultant technique"],
+            "durée": "5 ans (Diplôme d'Ingénieur) ou 3 ans (BUT/BTS + Licence Pro).",
+            "niveau": "Élevé"
+        },
+        {
+            "nom": "Informatique",
+            "description": "Pour les constructeurs du digital qui aiment décortiquer et assembler des systèmes (logiciels ou réseaux), coder, et chercher constamment des solutions techniques innovantes.",
+            "matières_fortes": ["Programmation", "Bases de données", "Réseaux", "Sécurité", "Architecture des ordinateurs", "Algorithmes"],
+            "qualités_requises": ["Logique implacable", "curiosité technique", "capacité d'auto-apprentissage", "patience"],
+            "débouchés": ["Développeur", "Administrateur de systèmes et réseaux", "Expert en Cybersécurité", "Chef de projet IT"],
+            "durée": "3 ans (BUT/Licence) à 5 ans (Master/École d'Ingénieurs).",
+            "niveau": "Élevé"
+        },
+        {
+            "nom": "Communication/Marketing",
+            "description": "Pour les créatifs stratèges qui aiment comprendre le public, transmettre des messages percutants, influencer des comportements et manier l'image de marque (d'une entreprise, d'un produit, etc.).",
+            "matières_fortes": ["Stratégie", "Psychologie du consommateur", "Médias", "Rédaction", "Outils numériques", "Événementiel"],
+            "qualités_requises": ["Créativité", "sens du relationnel", "capacité de persuasion", "adaptabilité", "excellente culture générale"],
+            "débouchés": ["Chef de produit", "Community Manager", "Responsable communication", "Traffic Manager", "Attaché de presse"],
+            "durée": "3 ans (Licence Pro/BUT) à 5 ans (Master/École Spécialisée).",
+            "niveau": "Moyen"
+        },
+        {
+            "nom": "Agronomie",
+            "description": "Pour les scientifiques du vivant appliqué à la terre qui sont sensibles aux enjeux écologiques et alimentaires, et qui souhaitent améliorer les systèmes de production agricole de manière durable.",
+            "matières_fortes": ["Biologie végétale/animale", "Chimie", "Écologie", "Géographie", "Mathématiques", "Sciences du sol"],
+            "qualités_requises": ["Sens de l'observation", "sensibilité aux enjeux environnementaux", "capacité à travailler sur le terrain", "rigueur scientifique"],
+            "débouchés": ["Ingénieur agronome", "Conseiller agricole", "Chercheur en agronomie", "Responsable qualité alimentaire"],
+            "durée": "5 ans (Ingénieur Agronome/Master) ou 2-3 ans (BTS/BUT).",
+            "niveau": "Moyen à Élevé"
+        },
+        {
+            "nom": "Arts & Design",
+            "description": "Pour les créatifs et manuels qui ont un sens esthétique développé, une imagination fertile, et le désir d'utiliser l'image ou la forme pour communiquer, concevoir et innover.",
+            "matières_fortes": ["Dessin", "Histoire de l'art", "Composition", "Logiciels de création (Suite Adobe, 3D)", "Théorie des couleurs"],
+            "qualités_requises": ["Créativité", "sens esthétique", "persévérance", "capacité à accepter la critique", "culture visuelle riche"],
+            "débouchés": ["Graphiste", "Styliste", "Architecte d'intérieur", "Illustrateur", "Artiste plasticien", "Designer UX/UI"],
+            "durée": "3 ans (DNA/Licence) à 5 ans (DNSEP/Master/École Spécialisée).",
+            "niveau": "Moyen"
+        }
+    ]
+}

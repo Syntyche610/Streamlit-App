@@ -1,0 +1,9 @@
+nltk
+pandas
+openai
+streamlit
+ipykernel
+chatterbot
+tensorflow
+scikit-learn
+streamlit_js_eval
