@@ -246,21 +246,25 @@ with st.spinner("Patiente un instant..."):
         else:
             reply = "Super, j'ai tout ce qu'il me faut ! Tu veux que je te propose un quiz personnalisé pour affiner ta filière idéale ? 🙂"
             st.session_state.options = True
-            print(st.session_state.options)
 
         st.session_state.messages.append({"role": "user", "content": user_input})
         st.session_state.messages.append({"role": "assistant", "content": reply})
 
 
-if st.session_state.options:
+while st.session_state.options:
+    print(st.session_state.options)
 
     st.write("#### Choisis une option:")
+    print(st.session_state.options)
 
-    if st.button("Quiz"):
+    if st.button("Quiz", key='q'):
+        print(st.session_state.options)
+        st.session_state.options = False
+
         st.switch_page("pages/2_Quiz.py")
         st.rerun()
 
-    if st.button("Recommandation de filières"):
+    if st.button("Recommandation de filières", key='recom'):
         with st.spinner("Génération en cours..."):
             recom = personalized_suggestions(st.session_state.profile, file)
             st.session_state.mode = "recommend"

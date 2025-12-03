@@ -143,7 +143,7 @@ with st.sidebar:
 
 
 if not st.session_state.quiz_active:
-    if st.button("Démarrer le quiz"):
+    if st.button("Démarrer le quiz", key='quiz'):
         st.session_state.quiz_active = True
         st.session_state.quiz_answers = []
         
@@ -168,13 +168,13 @@ else:
         st.markdown("### Résultats du quiz (scores)")
         st.write(scores)
 
-        if st.button("Recommandation de filières"):
+        if st.button("Recommandation de filières", key='filières'):
             with st.spinner("Génération en cours..."):
                 recom = personalized_suggestions(st.session_state.student_profile, scores, filieres_data)
                 st.markdown("### Recommandation détaillée")
                 st.write(recom)
 
-        if st.button("Recommencer le quiz"):
+        if st.button("Recommencer le quiz", key='restart_quiz'):
             st.session_state.quiz_active = False
             st.session_state.quiz_answers = []
             st.rerun()
