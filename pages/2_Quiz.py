@@ -132,10 +132,10 @@ filieres_data = load_filieres("filieres.json")
 
 # Interface Streamlit
 
-st.subheader("Profil détecté")
-st.session_state.profile
+# st.subheader("Profil détecté")
+# st.session_state.profile
 
-st.markdown("---")
+# st.markdown("---")
 st.title("Quiz")
 
 with st.sidebar:
