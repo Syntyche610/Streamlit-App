@@ -251,18 +251,18 @@ with st.spinner("Patiente un instant..."):
         st.session_state.messages.append({"role": "assistant", "content": reply})
 
 
-while st.session_state.options:
+if st.session_state.options:
     print(st.session_state.options)
 
     st.write("#### Choisis une option:")
     print(st.session_state.options)
 
     if st.button("Quiz", key='q'):
-        print(st.session_state.options)
-        st.session_state.options = False
+        # print(st.session_state.options)
+        # st.session_state.options = False
 
         st.switch_page("pages/2_Quiz.py")
-        st.rerun()
+        # st.rerun()
 
     if st.button("Recommandation de filières", key='recom'):
         with st.spinner("Génération en cours..."):
