@@ -252,9 +252,9 @@ with st.spinner("Patiente un instant..."):
 
 
 if st.session_state.options:
-    col1, col2 = st.columns(2)
-
     st.write("#### Choisis une option:")
+
+    col1, col2 = st.columns(2)
 
     with col1:
         if st.button("Quiz", key='q'):
