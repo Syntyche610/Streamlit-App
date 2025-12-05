@@ -251,34 +251,23 @@ with st.spinner("Patiente un instant..."):
         st.session_state.messages.append({"role": "assistant", "content": reply})
 
 
-user_choice = None  # contiendra 'quiz' ou 'recom'
-
 if st.session_state.options:
     col1, col2 = st.columns(2)
 
+    st.write("#### Choisis une option:")
+
     with col1:
-        if st.button("Quiz"):
-            user_choice = "quiz"
+        if st.button("Quiz", key='q'):
+            st.switch_page("pages/2_Quiz.py")
 
     with col2:
-        if st.button("Recommandation de filières"):
-            user_choice = "recom"
+        if st.button("Recommandation de filières", key='recom'):
+            with st.spinner("Génération en cours..."):
+                recom = personalized_suggestions(st.session_state.profile, file)
+                st.session_state.mode = "recommend"
 
-# --- 3. Action en fonction du bouton ---
-if user_choice == "quiz":
-    st.session_state.options = False
-    st.switch_page("pages/2_Quiz.py")
-
-elif user_choice == "recom":
-    st.session_state.options = False
-    with st.spinner("Génération en cours..."):
-        recom = personalized_suggestions(st.session_state.profile, file)
-        st.session_state.messages.append(
-            {"role": "assistant", "content": recom}
-        )
-
-#if st.session_state.mode == "recommend":
-#    st.session_state.messages.append({"role": "assistant", "content": recom})
+if st.session_state.mode == "recommend":
+    st.session_state.messages.append({"role": "assistant", "content": recom})
 
 for message in st.session_state.messages:
     cont.chat_message(message["role"]).write(message["content"])
