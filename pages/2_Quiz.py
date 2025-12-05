@@ -15,8 +15,8 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 MODEL = "gpt-4.1-mini"
 
 
-if "student_profile" not in st.session_state:
-    st.session_state.student_profile = {
+if "profile" not in st.session_state:
+    st.session_state.profile = {
         "interests": None,
         "favorite_subjects": None,
         "personality": None,
@@ -132,10 +132,10 @@ filieres_data = load_filieres("filieres.json")
 
 # Interface Streamlit
 
-# st.subheader("Profil détecté")
-# st.session_state.student_profile
+st.subheader("Profil détecté")
+st.session_state.profile
 
-# st.markdown("---")
+st.markdown("---")
 st.title("Quiz")
 
 with st.sidebar:
@@ -147,7 +147,7 @@ if not st.session_state.quiz_active:
         st.session_state.quiz_active = True
         st.session_state.quiz_answers = []
         
-        st.session_state.quiz_questions = build_adaptive_quiz(st.session_state.student_profile)
+        st.session_state.quiz_questions = build_adaptive_quiz(st.session_state.profile)
         st.rerun()
 else:
     question_index = len(st.session_state.quiz_answers)
@@ -170,7 +170,7 @@ else:
 
         if st.button("Recommandation de filières", key='filières'):
             with st.spinner("Génération en cours..."):
-                recom = personalized_suggestions(st.session_state.student_profile, scores, filieres_data)
+                recom = personalized_suggestions(st.session_state.profile, scores, filieres_data)
                 st.markdown("### Recommandation détaillée")
                 st.write(recom)
 
